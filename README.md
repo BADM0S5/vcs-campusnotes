@@ -6,3 +6,6 @@ Updated from second clones repository.
 - Data Structures And Algorithns
 - oops
 - IOT
+
+## Contributions
+Contributions and improvements are welcome

@@ -1,5 +1,5 @@
 # Campus Notes
-A repository for managing college study notes.
+A repository for organizing and managing college study notes.
 Updated from second clones repository.
 
 ## Course Resources

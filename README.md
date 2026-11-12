@@ -1,3 +1,7 @@
+## Contents
+- Course Resources
+- Contributions
+
 # Campus Notes
 A repository for organizing and managing college study notes.
 Updated from second clones repository.

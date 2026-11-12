@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+mapfile -d '' staged_files < <(git diff --cached --name-only --diff-filter=ACMR -z)
+
+for file in "${staged_files[@]}"; do
+    [[ "$file" == .githooks/* ]] && continue
+
+    if git show ":$file" | grep -nE 'TODO|FIXME'; then
+        echo "ERROR: Commit blocked!"
+        echo "Remove TODO or FIXME from: $file"
+        exit 1
+    fi
+done
+
+echo "Pre-commit check passed!"
+exit 0
